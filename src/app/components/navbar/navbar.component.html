@@ -1,0 +1,18 @@
+<div class="navbar-container spacer">
+  <div class="navbar-menu">
+
+    <div class="title">Aplikacja</div>
+
+    <button class="navbar-menu-button" [matMenuTriggerFor]="menu">Aplikacje</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>TODO</button>
+      <button mat-menu-item>Bank haseł</button>
+      <button mat-menu-item>Chat</button>
+    </mat-menu>
+  </div>
+
+  <div class="navbar-links">
+    <a href="#">Login</a>
+    <a href="#">Rejestracja</a>
+  </div>
+</div>
