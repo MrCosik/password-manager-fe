@@ -3,7 +3,12 @@ import {HomePageComponent} from './pages/home-page/home-page.component';
 
 export const routes: Routes = [
   {
-    path: '/',
+    path: '',
+    component: HomePageComponent
+  },
+  {
+    path: '**',
     component: HomePageComponent
   }
+
 ];
