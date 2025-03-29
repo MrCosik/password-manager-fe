@@ -5,7 +5,7 @@
 
     <button class="navbar-menu-button" [matMenuTriggerFor]="menu">Applications</button>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>TODO</button>
+      <button mat-menu-item routerLink="/todo">TODO</button>
       <button mat-menu-item>Password bank</button>
       <button mat-menu-item>Chat</button>
     </mat-menu>
@@ -13,6 +13,6 @@
 
   <div class="navbar-links">
     <a routerLink="/login">Login</a>
-    <a href="/login">Register</a>
+    <a routerLink="/login">Register</a>
   </div>
 </div>

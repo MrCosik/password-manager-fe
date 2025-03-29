@@ -6,6 +6,6 @@ import { Router, RouterLink } from '@angular/router';
   selector: 'app-home-page',
   imports: [MatButton, RouterLink],
   templateUrl: './home-page.component.html',
-  styleUrl: './home-page.component.css',
+  styleUrl: './home-page.component.scss',
 })
 export class HomePageComponent {}
