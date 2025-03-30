@@ -28,3 +28,7 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+::ng-deep .mdc-text-field--outlined {
+  background-color: white !important;
+}
