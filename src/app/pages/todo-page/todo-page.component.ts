@@ -31,4 +31,8 @@ export class TodoPageComponent {
     this.store.dispatch(TodosActions.addTodo({  value: this.value }));
     this.value = '';
   }
+
+  checkTodo(todo: Todo) {
+    this.store.dispatch(TodosActions.updateTodo({todoId: todo.id}))
+  }
 }

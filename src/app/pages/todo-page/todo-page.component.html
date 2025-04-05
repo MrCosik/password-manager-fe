@@ -10,7 +10,7 @@
   <ul>
     @for (todo of (todos$ | async); track todo.id) {
       <li class="crossed" >
-        <mat-checkbox [checked]="todo.checked" (change)="todo.checked = !todo.checked"
+        <mat-checkbox [checked]="todo.checked" (change)="checkTodo(todo)"
                       [ngClass]="{'crossed' : true}"
                       class="crossed"
         >
