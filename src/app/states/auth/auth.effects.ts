@@ -1,6 +1,6 @@
 import { inject, Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { login } from './auth.actions';
+import { login, logout } from './auth.actions';
 import { tap } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -19,5 +19,14 @@ export class AuthEffects {
         })
       ),
     { dispatch: false }
+  );
+
+  logout$ = createEffect(() =>
+    this.action.pipe(
+      ofType(logout),
+      tap(() => {
+        localStorage.removeItem('user');
+      })
+    ),{dispatch: false}
   );
 }
