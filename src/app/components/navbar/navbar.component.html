@@ -12,7 +12,10 @@
   </div>
 
   <div class="navbar-links">
-    <a routerLink="/login">Login</a>
-    <a routerLink="/login">Register</a>
+    @if (isLoggedIn$ | async) {
+      <button (click)="logout()" mat-stroked-button >Logout</button>
+    } @else {
+      <button mat-stroked-button  routerLink="/login">Login</button>
+    }
   </div>
 </div>
