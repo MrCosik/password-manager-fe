@@ -6,8 +6,8 @@
     <button class="navbar-menu-button" [matMenuTriggerFor]="menu">Applications</button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink="/todo">TODO</button>
-      <button mat-menu-item>Password bank</button>
-      <button mat-menu-item>Chat</button>
+      <button mat-menu-item [disabled]="true">Password bank</button>
+      <button mat-menu-item [disabled]="true">Chat</button>
     </mat-menu>
   </div>
 
