@@ -1,10 +1,11 @@
 import { Todo } from '../../pages/todo-page/todo-page.component';
 import { createReducer, on } from '@ngrx/store';
-import { TodosApiActions } from './todos.actions';
+import { TodosActions } from './todos.actions';
 
 export const initialState: Todo[] = [];
 
 export const todosReducer = createReducer(
   initialState,
-  on(TodosApiActions.getTodoList, (state, { todos }) => todos)
+  on(TodosActions.addTodo, (state, { value }) => [...state, { id: state.length + 1, value, checked: false }]),
+  on(TodosActions.getTodoList, (state, { todos }) => todos)
 );

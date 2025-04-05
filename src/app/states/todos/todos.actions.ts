@@ -4,8 +4,9 @@ import { Todo } from '../../pages/todo-page/todo-page.component';
 export const TodosActions = createActionGroup({
   source: 'Todos',
   events: {
-    'Add Todo': props<{ todo: Todo }>(),
+    'Add Todo': props<{ value: string }>(),
     'Remove Todo': props<{ todoId: number }>(),
+    'Get Todo List': props<{todos: Todo[]}>()
   },
 });
 
