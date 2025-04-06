@@ -20,7 +20,7 @@
             "baseHref": "/password-manager-fe/",
             "outputPath": "dist/password-manager-fe",
 						"index": "src/index.html",
-						"browser": "src/main.ts",
+						"browser": "",
 						"polyfills": [
 							"zone.js"
 						],
