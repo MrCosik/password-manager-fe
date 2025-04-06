@@ -40,6 +40,10 @@
           },
           "configurations": {
             "production": {
+              "outputPath": {
+                "base": "dist/password-manager-fe",
+                "browser": ""
+              },
               "budgets": [
                 {
                   "type": "initial",
@@ -57,11 +61,7 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true,
-              "outputPath": {
-                "base": "dist/password-manager-fe",
-                "browser": ""
-              }
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
