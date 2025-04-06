@@ -28,6 +28,6 @@ jobs:
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: 'prod'
-          folder: 'dist/password-manager-fe'
+          branch: 'gh-pages'
+          folder: 'dist/password-manager-fe/browser'
 
