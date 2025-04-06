@@ -17,7 +17,7 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-            "baseHref": "/password-manager-fe/",
+            "baseHref": "https://github.com/MrCosik/password-manager-fe",
             "outputPath": "dist/password-manager-fe",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
