@@ -26,7 +26,7 @@ jobs:
         run: npm run build --configuration password-manager-fe
 
       - name: Copy index.html to 404.html for SPA fallback
-        run: cp dist/browser/index.html dist/browser/404.html
+        run: cp dist/password-manager-fe/browser/index.html dist/password-manager-fe/browser/404.html
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
