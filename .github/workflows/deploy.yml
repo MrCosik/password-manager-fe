@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Build Angular app
-        run: npm run build --configuration password-manager-fe
+        run: npm run build:prod
 
       - name: Copy index.html to 404.html for SPA fallback
         run: cp dist/password-manager-fe/browser/index.html dist/password-manager-fe/browser/404.html
