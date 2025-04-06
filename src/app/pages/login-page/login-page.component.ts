@@ -8,7 +8,7 @@ import { MatButton } from '@angular/material/button';
   selector: 'app-login-page',
   imports: [MatInput, MatFormField, MatLabel, ReactiveFormsModule, MatButton],
   templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css',
+  styleUrl: './login-page.component.scss',
 })
 export class LoginPageComponent {
   private formBuilder = inject(FormBuilder);
